@@ -1,11 +1,148 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Personal website</title>
-    </head>
-    <body>
-        <h1>Welcome to my website!</h1>
-        Hello!
-    </body>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Roderik Egberink - Persoonlijke website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Persoonlijke website van Roderik Egberink.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div>
+        <h1 class="site-title">Roderik Egberink</h1>
+        <p class="site-subtitle">Docent · Onderwijsleider · Maker</p>
+      </div>
+      <nav class="main-nav">
+        <a href="#over-mij">Over mij</a>
+        <a href="#projecten">Projecten</a>
+        <a href="#werk">Werk & opleiding</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <!-- Hero / Intro -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div>
+          <h2>Welkom op mijn persoonlijke website</h2>
+          <p>
+            <!-- Vul deze tekst later in -->
+            Hier vertel ik iets over wie ik ben, waar ik aan werk en wat ik interessant vind
+            in onderwijs, technologie en creatie.
+          </p>
+          <a class="button" href="#contact">Neem contact op</a>
+        </div>
+        <div class="hero-photo">
+          <!-- Vervang dit later door een echte foto -->
+          <div class="photo-placeholder">
+            Jouw foto hier
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Over mij -->
+    <section id="over-mij" class="section">
+      <div class="container">
+        <h2>Over mij</h2>
+        <p>
+          <!-- Korte bio -->
+          Schrijf hier in een paar alinea’s wie je bent, wat je doet en waar je energie van krijgt.
+        </p>
+        <p>
+          <!-- Optioneel: interesses -->
+          Denk aan: onderwijs, montessori, digitale geletterdheid, programmeren, sport, muziek, etc.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projecten -->
+    <section id="projecten" class="section section-alt">
+      <div class="container">
+        <h2>Projecten</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Project 1</h3>
+            <p>
+              Korte beschrijving van een project (bijvoorbeeld een CS50-project, een lesontwerp
+              of iets creatiefs waar je trots op bent).
+            </p>
+            <a href="#" class="card-link">Bekijk meer</a>
+          </article>
+
+          <article class="card">
+            <h3>Project 2</h3>
+            <p>
+              Nog een project. Je kunt hier later een echte link naar GitHub, CodePen of een pdf plaatsen.
+            </p>
+            <a href="#" class="card-link">Bekijk meer</a>
+          </article>
+
+          <article class="card">
+            <h3>Project 3</h3>
+            <p>
+              Dit is een placeholder. Je kunt het weghalen of aanvullen als je meer projecten hebt.
+            </p>
+            <a href="#" class="card-link">Bekijk meer</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Werk & Opleiding -->
+    <section id="werk" class="section">
+      <div class="container">
+        <h2>Werk & opleiding</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Functie / Rol</h3>
+            <span class="timeline-period">20XX – heden</span>
+            <p>
+              Korte beschrijving van je rol, verantwoordelijkheden en context.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h3>Opleiding</h3>
+            <span class="timeline-period">20XX – 20XX</span>
+            <p>
+              Beschrijf hier een relevante studie, opleiding of training.
+            </p>
+          </div>
+          <!-- Voeg later meer items toe naar wens -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Je kunt hier een kort tekstje zetten, bijvoorbeeld:
+          “Wil je met me in contact komen over samenwerking, onderwijs of een project? Stuur me gerust een bericht.”
+        </p>
+        <ul class="contact-list">
+          <li>E-mail: <a href="mailto:voorbeeld@voorbeeld.nl">voorbeeld@voorbeeld.nl</a></li>
+          <li>GitHub: <a href="https://github.com/jouwgebruikersnaam" target="_blank">jouwgebruikersnaam</a></li>
+          <li>LinkedIn: <a href="#" target="_blank">Link naar je profiel</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Roderik Egberink. Alle rechten voorbehouden.</p>
+    </div>
+
+    <script>
+      // Zet automatisch het juiste jaar in de footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
 </html>
